@@ -1,8 +1,12 @@
 extends Node2D
 
 const DANGER: int = 2
+
+enum GAME_STATUS { PLAYING, PAUSED, GAME_OVER }
+
 @export var start_lives: int = 10
 var _lives: int = 15
+var _current_status: GAME_STATUS = GAME_STATUS.PLAYING
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
