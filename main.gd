@@ -7,6 +7,7 @@ enum GAME_STATUS { PLAYING, PAUSED, GAME_OVER }
 @export var start_lives: int = 10
 
 @onready var icon_2 = $Icon2
+@onready var icon_3 = $Icon/Icon3
 
 var _lives: int = 15
 var _current_status: GAME_STATUS = GAME_STATUS.PLAYING
