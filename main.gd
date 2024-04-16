@@ -20,6 +20,8 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") == true:
 		reduce_lives()
+		
+	icon_2.position.x += delta * 50.0
 	pass
 
 func reduce_lives() -> void: 
