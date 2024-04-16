@@ -27,8 +27,11 @@ position = Vector2(796, 321)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="MC" type="MarginContainer" parent="CanvasLayer"]
-offset_right = 300.0
-offset_bottom = 200.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/MC"]
 layout_mode = 2
